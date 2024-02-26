@@ -1,0 +1,156 @@
+@font-face {
+    font-family: newEdge;
+    src: url(fonts/NewEdge666-LightRounded.otf);
+}
+
+
+
+/* BODY AND FRAME */
+
+body {
+    background: black;
+}
+
+.topbar {
+    position: fixed;
+    top: 10px;
+    width: 100vw;
+    color: aliceblue;
+    display: inline-flex;
+
+    /* justify-content: space-around;
+    left: 316px;  
+    display: flex; */
+}
+
+    #last_edit {
+        position: relative;
+        top: 11.5px;
+        left: 10px;
+        font-size: 7pt;
+    }
+
+    #edited {
+        position: relative;
+        left: 20px;
+        font-size: 24pt;
+    }
+
+    #sound_gallery {
+        position: relative;
+        /* top: 10px; */
+        left: 36%;
+        font-size: 24pt;
+    }
+
+    #abstract {
+        position: relative;
+        top: 16px;
+        left: 46%;
+        font-size: 12pt;
+        cursor: crosshair;
+    }
+
+    #index {
+        position: relative;
+        top: 16px;
+        left: 56%;
+        font-size: 12pt;
+        cursor: crosshair;
+    }
+
+    #matter {
+        position: relative;
+        top: 16px;
+        left: 66%;
+        font-size: 12pt;
+        cursor: crosshair;
+    }
+
+.content {
+    width: 100%;
+    margin-top: 15vh; /* Ensure body content does not overlap header */
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "newEdge";
+}
+
+
+
+/* SOUNDS */
+
+.sound_index {
+    display: inline-block;
+    margin: 0.25em;
+}
+
+.sound {
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+
+    color: #6c596c;
+    transition: transform .5s; 
+    font-family:  "newEdge";
+    font-size: 49pt;
+
+    cursor: pointer;
+
+    margin-inline: 1;
+}
+
+.sound_index:hover .sound {
+    transform: scale(0.90);
+    color: #fde9fd;
+}
+
+.sound_index:hover .sound_time,
+.sound_index:hover .sound_place {
+    opacity: 1; 
+    
+}
+
+.sound_place, .sound_time {
+    text-align: center;
+    font-size: 10pt;
+    color: #fde9fd;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+
+/* MODALS */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    background-color: rgb(194, 194, 209);
+    opacity: 0.95;
+    box-shadow: white 0px 0px 50px inset; 
+   
+    width: 450px; 
+    height : 450px; 
+    top: 150px; 
+    left:300px;
+    z-index: 1000;
+}
+
+.modal_info {
+    margin-top: 150px;
+    margin-left: 180px;
+    margin-right: 50px;
+    color: black;
+}
+
+.modal_log {
+    color: black;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 48px;
+}

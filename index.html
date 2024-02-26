@@ -1,0 +1,105 @@
+<!-- 
+    
+    NOTES 
+
+    CTRL + D = REPLACE ALL HIGHLIGHTED
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sound gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <!-- <span>hello</span>
+        <span>whatever</span>
+        <span>cop</span>
+        <span>hello</span> -->
+        <div id="last_edit">
+            <div>last</div>
+            <div>edit</div>
+        </div>
+
+        <div id="edited">2024-02-26</div>
+        
+        <div id="sound_gallery">sound gallery</div>
+        
+        <div id="abstract">abstract</div>
+        
+        <div id="index">index</div>
+        
+        <div id="matter">matter</div>
+    </div>
+
+    <div class="content">
+        
+        <div class="sound" 
+            onmouseover="playSound('wind')" onmouseout="stopSound()">2023-05-01</div>
+        <audio id="wind" src="audio/windchimes.mp3" autoplay loop></audio>
+
+        <div class="sound_index">
+            <audio id="write" src="audio/handwriting(400).mp3" autoplay loop></audio>
+            <div class="sound_place">OCADU Library</div>
+            <div class="sound" 
+                onmouseover="playSound('write')" onmouseout="stopSound()" onclick="openModal('write_modal', 'write')">
+                2024-02-05</div>
+            <div class="sound_time">6:33:33 PM</div>
+            <div class="modal" id="write_modal" 
+                    onclick="closeModal('write_modal')">
+                    <div class="modal_log">LOG №2</div>
+                    <p class="modal_info">dundas station, waiting for the train homebound (north towards finch). one of the first times I recorded some audio just for the sake of capturing the sonic landscape.</p>
+            </div>
+        </div>
+        
+
+        <div class="sound" 
+            onmouseover="playSound('ttc')" onmouseout="stopSound()" onclick="openModal('ttc_modal', 'ttc')">2023-10-03</div>
+        <audio id="ttc" src="audio/dundasstation.mp3" autoplay loop></audio>
+        <div class="modal" id="ttc_modal" 
+                 onclick="closeModal('ttc_modal')">
+                 <div class="modal_log">LOG №3</div>
+                 <p class="modal_info">dundas station, waiting for the train homebound (north towards finch). one of the first times I recorded some audio just for the sake of capturing the sonic landscape.</p>
+        </div>
+
+        <div class="sound" 
+            onmouseover="playSound('payphone')" onmouseout="stopSound()">2022-12-15</div>
+        <audio id="payphone" src="audio/payphone.mp3" autoplay loop></audio>
+
+        <div class="sound"
+            onmouseover="playSound('hello')" onmouseout="stopSound()">hello?</div>
+        <audio id="hello" src="audio/pleasehangup.mp3" autoplay loop></audio>
+
+        <div class="sound" 
+            onmouseover="playSound('resonance')" onmouseout="stopSound()">2023-10-30</div>
+        <audio id="resonance" src="audio/ocadgallery.mp3" autoplay loop></audio>
+
+        <div class="sound" 
+            onmouseover="playSound('cameron')" onmouseout="stopSound()">2023-10-03</div>
+        <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio>
+
+        <!-- <div class="sound" 
+            onmouseover="playSound('cameron')" onmouseout="stopSound()">2023-10-03</div>
+        <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio>
+
+        <div class="sound" 
+            onmouseover="playSound('cameron')" onmouseout="stopSound()">2023-10-03</div>
+        <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio>
+
+        <div class="sound" 
+            onmouseover="playSound('cameron')" onmouseout="stopSound()">2023-10-03</div>
+        <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio>
+
+        <div class="sound" 
+            onmouseover="playSound('cameron')" onmouseout="stopSound()">2023-10-03</div>
+        <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio> -->
+    </div>
+</body>
+</html>
