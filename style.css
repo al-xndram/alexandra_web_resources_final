@@ -93,10 +93,14 @@ body {
     width: 100%;
     margin-top: 15vh; /* Ensure body content does not overlap header */
     box-sizing: border-box;
-
     display: flex;
     flex-wrap: wrap;
     font-family: "newEdge";
+    line-height: 140%;
+}
+
+.emptydiv {
+    width: 300px;
 }
 
 
@@ -105,26 +109,25 @@ body {
 
 .sound_index {
     display: inline-block;
-    margin: 0.25em;
+    /* margin: 0.25em; */
+    cursor: crosshair;
 }
 
 .sound {
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
+    margin-top: 10px;
 
     color: #2a1e41;
     transition: transform .5s; 
     font-family:  "newEdge";
     font-size: 49pt;
-
-    cursor: pointer;
-
     margin-inline: 1;
 }
 
 .sound_index:hover .sound {
-    transform: scale(0.90);
+    transform: scale(0.70);
     color: #bcbdff;
     transition: all 0.4s;
 }
