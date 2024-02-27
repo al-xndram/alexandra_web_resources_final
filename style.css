@@ -25,13 +25,14 @@ body {
 
     #last_edit {
         position: relative;
-        top: 11.5px;
+        top: 8px;
         left: 10px;
         font-size: 7pt;
     }
 
     #edited {
         position: relative;
+        top: 10px;
         left: 20px;
         font-size: 12pt;
     }
