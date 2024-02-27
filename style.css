@@ -100,14 +100,14 @@ body {
 }
 
 .emptydiv {
-    width: 300px;
+    width: 200px;
 }
 
 
 
 /* SOUNDS */
 
-.sound_index {
+.sound_index, .abstract_index {
     display: inline-block;
     /* margin: 0.25em; */
     cursor: crosshair;
@@ -126,7 +126,8 @@ body {
     margin-inline: 1;
 }
 
-.sound_index:hover .sound {
+.sound_index:hover .sound, 
+.abstract_index:hover .sound {
     transform: scale(0.70);
     color: #bcbdff;
     transition: all 0.4s;
@@ -144,6 +145,11 @@ body {
     color: #bcbdff;
     transition: all 0.4s;
     opacity: 0;
+}
+
+#summary {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 4px;
 }
 
 
@@ -170,7 +176,7 @@ body {
 .modal_log {
     position: relative;
     color: black;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 60px;
     font-size: 48px;
 }
@@ -188,4 +194,12 @@ body {
     margin-right: 65px;
     color: black;
 }
+
+/* .abstract_modal {
+    position: relative
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    font-size: 64;
+} */
 
