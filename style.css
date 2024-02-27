@@ -33,38 +33,59 @@ body {
     #edited {
         position: relative;
         left: 20px;
-        font-size: 24pt;
+        font-size: 12pt;
     }
 
     #sound_gallery {
         position: relative;
-        /* top: 10px; */
-        left: 36%;
-        font-size: 24pt;
+        top: 10px;
+        left: 45%;
+        font-size: 12pt;
     }
 
     #abstract {
         position: relative;
-        top: 16px;
-        left: 46%;
+        top: 10px;
+        left: 50%;
         font-size: 12pt;
         cursor: crosshair;
     }
 
     #index {
         position: relative;
-        top: 16px;
-        left: 56%;
+        top: 10px;
+        left: 55%;
+        font-size: 12pt;
+        cursor: crosshair;
+    }
+
+    #readings {
+        position: relative;
+        top: 10px;
+        left: 60%;
         font-size: 12pt;
         cursor: crosshair;
     }
 
     #matter {
         position: relative;
-        top: 16px;
-        left: 66%;
+        top: 10px;
+        left: 65%;
         font-size: 12pt;
         cursor: crosshair;
+    }
+
+    #abstract, #index, #readings, #matter {
+        color: rgb(86, 119, 147);
+    }
+
+    #abstract:hover,
+    #index:hover,
+    #readings:hover,
+    #matter:hover {
+        color: aliceblue;
+        transition: all 0.4s;
+        text-decoration: line-through;
     }
 
 .content {
@@ -91,7 +112,7 @@ body {
     border-radius: 5px;
     display: inline-block;
 
-    color: #6c596c;
+    color: #2a1e41;
     transition: transform .5s; 
     font-family:  "newEdge";
     font-size: 49pt;
@@ -103,7 +124,8 @@ body {
 
 .sound_index:hover .sound {
     transform: scale(0.90);
-    color: #fde9fd;
+    color: #bcbdff;
+    transition: all 0.4s;
 }
 
 .sound_index:hover .sound_time,
@@ -115,7 +137,7 @@ body {
 .sound_place, .sound_time {
     text-align: center;
     font-size: 10pt;
-    color: #fde9fd;
+    color: #bcbdff;
     transition: all 0.4s;
     opacity: 0;
 }
@@ -141,16 +163,25 @@ body {
     z-index: 1000;
 }
 
-.modal_info {
-    margin-top: 150px;
-    margin-left: 180px;
-    margin-right: 50px;
-    color: black;
-}
-
 .modal_log {
+    position: relative;
     color: black;
     margin-top: 50px;
     margin-left: 60px;
     font-size: 48px;
 }
+
+.modal_metadata {
+    margin-left: 174px;
+    margin-top: 30px;
+    line-height: 15pt;
+    font-size: 10pt;
+}
+
+.modal_entry {
+    margin-top: 50px;
+    margin-left: 174px;
+    margin-right: 65px;
+    color: black;
+}
+
