@@ -11,7 +11,7 @@ body {
     background: black;
     /* color: #5000ab; */
     /* color: #2a1e41; */
-    color: #2f0f6a;
+    color: #4416ce;
 
 }
 
@@ -21,7 +21,7 @@ body {
     width: 100vw;
     display: inline-flex;
     font-family: "newEdge";
-    color: #3f158d;
+    color: #522dd7;
 
     /* justify-content: space-around;
     left: 316px;  
@@ -33,13 +33,15 @@ body {
         top: 8px;
         left: 10px;
         font-size: 7pt;
+        cursor: cell;
     }
 
     #edited {
         position: relative;
-        top: 10px;
+        top: 8px;
         left: 20px;
-        font-size: 12pt;
+        font-size: 14pt;
+        cursor: cell;
     }
 
     #sound_gallery {
@@ -47,6 +49,7 @@ body {
         top: 10px;
         left: 45%;
         font-size: 12pt;
+        cursor: cell;
     }
 
     #abstract {
@@ -81,9 +84,6 @@ body {
         cursor: crosshair;
     }
 
-    #abstract, #index, #readings, #matter {
-    }
-
     #abstract:hover,
     #index:hover,
     #readings:hover,
@@ -93,6 +93,11 @@ body {
         text-decoration: line-through;
     }
 
+    #abstract:hover .abstract_index {
+        color: red;
+        transition: 0.4s;
+    }
+
 .content {
     width: 100%;
     margin-top: 15vh; /* Ensure body content does not overlap header */
@@ -100,11 +105,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: "newEdge";
-    line-height: 140%;
+    line-height: 1.25vw;
 }
 
 .emptydiv {
-    width: 200px;
+    width: 10vw;
 }
 
 
@@ -129,10 +134,15 @@ body {
     margin-inline: 1;
 }
 
-.sound_index:hover .sound, 
-.abstract_index:hover .sound {
+.sound_index:hover .sound {
     transform: scale(0.70);
     color: aliceblue;
+    transition: all 0.4s;
+}
+
+.abstract_index:hover .sound {
+    transform: scale(0.70);
+    color: red;
     transition: all 0.4s;
 }
 
@@ -160,6 +170,7 @@ body {
 
 
 
+
 /* MODALS */
 
 .modal {
@@ -167,12 +178,12 @@ body {
     position: fixed; 
     background-color: aliceblue;
     opacity: 0.95;
-    box-shadow: white 0px 0px 50px inset; 
+    /* box-shadow: white 0px 0px 50px inset;  */
    
     width: 450px; 
     height : 450px; 
-    top: 150px; 
-    left:300px;
+    top: 25vh; 
+    left: center;
     z-index: 1000;
 }
 
