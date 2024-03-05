@@ -155,11 +155,6 @@ body {
     margin-top: 4px;
 }
 
-
-
-
-
-
 /* MODALS */
 
 .modal {
@@ -204,3 +199,10 @@ body {
     font-size: 64;
 } */
 
+.active{ 
+    color: white;
+}
+
+.contentActive{
+    color: black;
+}
