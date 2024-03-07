@@ -7,10 +7,8 @@
     <title>sound gallery</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="basicInteractions.js"></script>
-    <script src="script.js"></script>
+
+    
 </head>
 
 <body>
@@ -39,52 +37,51 @@
     <div class="content">
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi4" src="audio/E_4 do you believe in god.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi4')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi4" src="audio/E_4 do you believe in god.mp3"></audio>
+            <div class="sound" >
                 LOG №4</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="wind" src="audio/poor image of chimes.wav" autoplay loop></audio>
+            <audio autoplay loop id="audio_wind" src="audio/poor image of chimes.wav"></audio>
 
             <div class="sound_place">*+..｡*</div>
-            <div class="sound" onmouseover="playSound('wind')" onmouseout="stopSound()" onclick="openModal('wind_modal', 'wind')">
+            <div class="sound" >
                 2024-02-26</div>
             <div class="sound_time">5:27:35 PM</div>
 
-            <div class="modal" id="wind_modal" onclick="closeModal('wind_modal')">
-                <div class="modal_log">LOG ⚖</div>
-                <div class="modal_metadata">
-                    <div class="modal_place">Poor (image) of Chimes</div>
-                    <div class="modal_time">5:27:35 PM</div>
-                    <br />
-                    <div class="modal_duration">01:12s</div>
-                </div>
-                <div class="modal_entry">I wanted to include this sample of chimes in the wind that I really enjoy, but
+            <div class="modal" id="wind_modal">
+                <button class="close">&times;</button>
+                <div class="modal_content">
+                LOG ⚖
+               Poor (image) of Chimes 5:27:35 PM 01:12s
+               I wanted to include this sample of chimes in the wind that I really enjoy, but
                     it wasn't mine. Now it is. It seems I've created a poor image of sorts. A poor sound. Then is it
-                    really mine anyways?</div>
+                    really mine anyways?
+                </div>
             </div>
         </div>
 
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="IV" src="audio/T_reliving memories.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('IV')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_IV" src="audio/T_reliving memories.mp3" ></audio>
+            <div id="summary" class="sound" >
                 IV</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="write" src="audio/handwriting(400).mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_write" src="audio/handwriting(400).mp3"></audio>
 
             <div class="sound_place">OCADU Library</div>
-            <div class="sound" onmouseover="playSound('write')" onmouseout="stopSound()" onclick="openModal('write_modal', 'write')">
+            <div class="sound" >
                 2024-02-05</div>
             <div class="sound_time">6:33:33 PM</div>
 
-            <div class="modal" id="write_modal" onclick="closeModal('write_modal')">
+            <div class="modal" id="write_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ✤</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Dorothy H. Hoover Library</div>
@@ -100,20 +97,21 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi7" src="audio/E_7 do humans create narratives.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi7')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi7" src="audio/E_7 do humans create narratives.mp3"></audio>
+            <div class="sound" >
                 LOG №7</div>
         </div>
 
         <div class="sound_index">
-            <audio id="ttc" src="audio/dundasstation.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_ttc" src="audio/dundasstation.mp3"></audio>
 
             <div class="sound_place">Dundas Station</div>
-            <div class="sound" onmouseover="playSound('ttc')" onmouseout="stopSound()" onclick="openModal('ttc_modal', 'ttc')">
+            <div class="sound" >
                 2023-10-03</div>
             <div class="sound_time">7:15:20 PM</div>
 
-            <div class="modal" id="ttc_modal" onclick="closeModal('ttc_modal')">
+            <div class="modal" id="ttc_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG №3</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Dorothy H. Hoover Library</div>
@@ -127,15 +125,16 @@
         </div>
 
         <div class="sound_index">
-            <audio id="payphone" src="audio/payphone.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_payphone" src="audio/payphone.mp3"></audio>
 
             <div class="sound_place">Payphone</div>
-            <div class="sound" onmouseover="playSound('payphone')" onmouseout="stopSound()" onclick="openModal('payphone_modal', 'payphone')">
+            <div class="sound" >
                 2022-12-15</div>
             <div class="sound_time">12:50:23 AM</div>
 
 
-            <div class="modal" id="payphone_modal" onclick="closeModal('payphone_modal')">
+            <div class="modal" id="payphone_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Dell Subway Payphone</div>
@@ -148,14 +147,15 @@
         </div>
 
         <div class="sound_index">
-            <audio id="hello" src="audio/pleasehangup.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_hello" src="audio/pleasehangup.mp3" muted="false"></audio>
 
             <div class="sound_place">@@#$%@!</div>
-            <div class="sound" onmouseover="playSound('hello')" onmouseout="stopSound()" onclick="openModal('hello_modal', 'hello')">
+            <div class="sound" >
                 hello?</div>
             <div class="sound_time">12:49:45 AM</div>
 
-            <div class="modal" id="hello_modal" onclick="closeModal('hello_modal')">
+            <div class="modal" id="hello_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚖</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Dell Subway Payphone</div>
@@ -169,15 +169,16 @@
 
 
         <div class="sound_index">
-            <audio id="resonance" src="audio/ocadgallery.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_resonance" src="audio/ocadgallery.mp3"></audio>
 
             <div class="sound_place">OCAD U Gallery</div>
-            <div class="sound" onmouseover="playSound('resonance')" onmouseout="stopSound()" onclick="openModal('resonance_modal', 'resonance')">
+            <div class="sound" >
                 2023-10-30</div>
             <div class="sound_time">11:50:39 AM</div>
 
 
-            <div class="modal" id="resonance_modal" onclick="closeModal('resonance_modal')">
+            <div class="modal" id="resonance_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">100 McCaul 2nd Floor Galleries</div>
@@ -197,24 +198,25 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi1" src="audio/E_1.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi1')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi1" src="audio/E_1.mp3"></audio>
+            <div class="sound" >
                 LOG №1</div>
         </div>
 
 
         <!-- <div class="sound_index">
-            <audio id="cameron" src="audio/thecameron-oct8.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_cameron" src="audio/thecameron-oct8.mp3"></audio>
 
             <div class="sound_place">Dundas Station</div>
             <div class="sound" 
-                onmouseover="playSound('cameron')" onmouseout="stopSound()" onclick="openModal('ttc_modal', 'ttc')">
+                >
                 2023-10-03</div>
             <div class="sound_time">6:33:33 PM</div>
 
 
             <div class="modal" id="ttc_modal" 
-                    onclick="closeModal('ttc_modal')">
+            <button class="close">&times;</button>
+                >
                         <div class="modal_log">LOG №3</div>
                         <div class="modal_metadata">
                                 <div class="modal_place">Dorothy H. Hoover Library</div>
@@ -227,14 +229,15 @@
         </div> -->
 
         <div class="sound_index">
-            <audio id="snow_walking" src="audio/walking in snow at the big glowy.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_snow_walking" src="audio/walking in snow at the big glowy.mp3"></audio>
 
             <div class="sound_place">Old Port (glowing arch)</div>
-            <div class="sound" onmouseover="playSound('snow_walking')" onmouseout="stopSound()" onclick="openModal('snow_modal', 'snow_walking')">
+            <div class="sound" >
                 2024-02-20</div>
             <div class="sound_time">6:43:03 PM</div>
 
-            <div class="modal" id="snow_modal" onclick="closeModal('snow_modal')">
+            <div class="modal" id="snow_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Old Port, Montreal</div>
@@ -248,29 +251,30 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="I" src="audio/S_lost earbud.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('I')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_I" src="audio/S_lost earbud.mp3"></audio>
+            <div id="summary" class="sound" >
                 I</div>
         </div>
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi2" src="audio/E_2 narrative.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi2')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi2" src="audio/E_2 narrative.mp3"></audio>
+            <div class="sound" >
                 LOG №2</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="venus" src="audio/venus as a boy fm2-2ch 94.1.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_venus" src="audio/venus as a boy fm2-2ch 94.1.mp3"></audio>
 
             <div class="sound_place">fm2-2ch 94.1</div>
-            <div class="sound" onmouseover="playSound('venus')" onmouseout="stopSound()" onclick="openModal('venus_modal', 'venus')">
+            <div class="sound" >
                 2024-02-14</div>
             <div class="sound_time">11:22:15 PM</div>
 
 
-            <div class="modal" id="venus_modal" onclick="closeModal('venus_modal')">
+            <div class="modal" id="venus_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚖</div>
                 <div class="modal_metadata">
                     <div class="modal_place">fm2-2ch 94.1 [DVP North]</div>
@@ -285,15 +289,16 @@
         </div>
 
         <div class="sound_index">
-            <audio id="aunja" src="audio/cafe aunja.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_aunja" src="audio/cafe aunja.mp3"></audio>
 
             <div class="sound_place">cafe Aunja</div>
-            <div class="sound" onmouseover="playSound('aunja')" onmouseout="stopSound()" onclick="openModal('aunja_modal', 'aunja')">
+            <div class="sound" >
                 2024-02-20</div>
             <div class="sound_time">12:34:02 PM</div>
 
 
-            <div class="modal" id="aunja_modal" onclick="closeModal('aunja_modal')">
+            <div class="modal" id="aunja_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Aunja Cafe, Montreal</div>
@@ -309,37 +314,38 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="II" src="audio/T_phone app and recording sound randomly.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('II')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_II" src="audio/T_phone app and recording sound randomly.mp3"></audio>
+            <div id="summary" class="sound" >
                 II</div>
         </div>
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi5" src="audio/E_5 can you define.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi5')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi5" src="audio/E_5 can you define.mp3"></audio>
+            <div class="sound" >
                 LOG №5</div>
         </div>
 
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="V" src="audio/T_sound architecture.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('V')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_V" src="audio/T_sound architecture.mp3"></audio>
+            <div id="summary" class="sound" >
                 V</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="cca_cards" src="audio/choosing cards (cca).mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_cca_cards" src="audio/choosing cards (cca).mp3"></audio>
 
             <div class="sound_place">The Lives of Documents [3]</div>
-            <div class="sound" onmouseover="playSound('cca_cards')" onmouseout="stopSound()" onclick="openModal('cca_cards_modal', 'cca_cards')">
+            <div class="sound" >
                 2024-02-21</div>
             <div class="sound_time">4:34:22 PM</div>
 
 
-            <div class="modal" id="cca_cards_modal" onclick="closeModal('cca_cards_modal')">
+            <div class="modal" id="cca_cards_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Canadian Centre for Architecture, Montreal</div>
@@ -352,15 +358,16 @@
         </div>
 
         <div class="sound_index">
-            <audio id="stilllife" src="audio/coding still life.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_stilllife" src="audio/coding still life.mp3"></audio>
 
             <div class="sound_place">100 McCaul Room 650</div>
-            <div class="sound" onmouseover="playSound('stilllife')" onmouseout="stopSound()" onclick="openModal('life_modal', 'stilllife')">
+            <div class="sound" >
                 2024-02-16</div>
             <div class="sound_time">12:31:45 PM</div>
 
 
-            <div class="modal" id="life_modal" onclick="closeModal('life_modal')">
+            <div class="modal" id="life_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">100 McCaul Room 650</div>
@@ -374,22 +381,23 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi3" src="audio/E_3 narratives can be good or bad.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi3')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi3" src="audio/E_3 narratives can be good or bad.mp3"></audio>
+            <div class="sound" >
                 LOG №3</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="gare_centrale" src="audio/gare centrale.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_gare_centrale" src="audio/gare centrale.mp3"></audio>
 
             <div class="sound_place">Gare Centrale</div>
-            <div class="sound" onmouseover="playSound('gare_centrale')" onmouseout="stopSound()" onclick="openModal('gare_modal', 'gare_centrale')">
+            <div class="sound" >
                 2024-02-19</div>
             <div class="sound_time">12:52:28 PM</div>
 
 
-            <div class="modal" id="gare_modal" onclick="closeModal('gare_modal')">
+            <div class="modal" id="gare_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Gare Centrale, Montreal</div>
@@ -402,16 +410,17 @@
         </div>
 
         <div class="sound_index">
-            <audio id="manpuku" src="audio/manpuku.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_manpuku" src="audio/manpuku.mp3"></audio>
 
             <div class="sound_place">Manpuku</div>
-            <div class="sound" onmouseover="playSound('manpuku')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('manpuku_modal', 'manpuku')">
                 2024-02-15</div>
             <div class="sound_time">1:26:24 PM</div>
 
 
-            <div class="modal" id="manpuku_modal" onclick="closeModal('manpuku_modal')">
+            <div class="modal" id="manpuku_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Manpuku, Village by the Grange</div>
@@ -425,16 +434,17 @@
         </div>
 
         <div class="sound_index">
-            <audio id="metro" src="audio/metro lemon squares.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_metro" src="audio/metro lemon squares.mp3"></audio>
 
             <div class="sound_place">College Station Metro</div>
-            <div class="sound" onmouseover="playSound('metro')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('metro_modal', 'metro')">
                 2024-02-24</div>
             <div class="sound_time">7:15:12 PM</div>
 
 
-            <div class="modal" id="metro_modal" onclick="closeModal('metro_modal')">
+            <div class="modal" id="metro_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Metro, College Station Shops</div>
@@ -448,8 +458,8 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="III" src="audio/A_photo gallery.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('III')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_III" src="audio/A_photo gallery.mp3"></audio>
+            <div id="summary" class="sound" >
                 III</div>
         </div>
 
@@ -457,16 +467,17 @@
 
 
         <div class="sound_index">
-            <audio id="mushrooms" src="audio/mushrooms (cca).mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_mushrooms" src="audio/mushrooms (cca).mp3"></audio>
 
             <div class="sound_place">The Lives of Documents [2]</div>
-            <div class="sound" onmouseover="playSound('mushrooms')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('mushroom_modal', 'mushrooms')">
                 2024-02-21</div>
             <div class="sound_time">4:12:14 PM</div>
 
 
-            <div class="modal" id="mushroom_modal" onclick="closeModal('mushroom_modal')">
+            <div class="modal" id="mushroom_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚖</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Canadian Centre for Architecture, Montreal</div>
@@ -481,23 +492,24 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi5" src="audio/E_6 conscious or unconscious narratives.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi6')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi5" src="audio/E_6 conscious or unconscious narratives.mp3"></audio>
+            <div class="sound" >
                 LOG №6</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="guy_concordia" src="audio/guy concordia.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_guy_concordia" src="audio/guy concordia.mp3"></audio>
 
             <div class="sound_place">Guy Concordia</div>
-            <div class="sound" onmouseover="playSound('guy_concordia')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('concordia_modal', 'guy_concordia')">
                 2024-02-19</div>
             <div class="sound_time">3:51:23 PM</div>
 
 
-            <div class="modal" id="concordia_modal" onclick="closeModal('concordia_modal')">
+            <div class="modal" id="concordia_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Guy Concordia</div>
@@ -512,8 +524,8 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi8" src="audio/E_8 my take.mp3" autoplay loop></audio>
-            <div class="sound" onmouseover="playSound('Edi8')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi8" src="audio/E_8 my take.mp3"></audio>
+            <div class="sound" >
                 LOG №8</div>
         </div>
 
@@ -521,16 +533,17 @@
 
 
         <div class="sound_index">
-            <audio id="curator" src="audio/curator speaking room 1 (cca).mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_curator" src="audio/curator speaking room 1 (cca).mp3"></audio>
 
             <div class="sound_place">The Lives of Documents [1]</div>
-            <div class="sound" onmouseover="playSound('curator')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('curator_modal', 'curator')">
                 2024-02-21</div>
             <div class="sound_time">3:26:41 PM</div>
 
 
-            <div class="modal" id="curator_modal" onclick="closeModal('curator_modal')">
+            <div class="modal" id="curator_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚖</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Canadian Centre for Architecture, Montreal</div>
@@ -543,16 +556,17 @@
         </div>
 
         <div class="sound_index">
-            <audio id="oldport" src="audio/old port.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_oldport" src="audio/old port.mp3"></audio>
 
             <div class="sound_place">Old Port Walkway</div>
-            <div class="sound" onmouseover="playSound('oldport')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('oldport_modal', 'oldport')">
                 look</div>
             <div class="sound_time">6:35:06 PM</div>
 
 
-            <div class="modal" id="oldport_modal" onclick="closeModal('oldport_modal')">
+            <div class="modal" id="oldport_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Dorothy H. Hoover Library</div>
@@ -566,16 +580,17 @@
         </div>
 
         <div class="sound_index">
-            <audio id="museum_cafe" src="audio/museum cafe (mbam).mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_museum_cafe" src="audio/museum cafe (mbam).mp3"></audio>
 
             <div class="sound_place">MMFA Cafe</div>
-            <div class="sound" onmouseover="playSound('museum_cafe')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('museum_cafe_modal', 'museum_cafe')">
                 2024-02-20</div>
             <div class="sound_time">1:31:24 PM</div>
 
 
-            <div class="modal" id="museum_cafe_modal" onclick="closeModal('museum_cafe_modal')">
+            <div class="modal" id="museum_cafe_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Cafe of the Montreal Museum of Fine Arts</div>
@@ -590,23 +605,24 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="VI" src="audio/fin.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('VI')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_VI" src="audio/fin.mp3"></audio>
+            <div id="summary" class="sound" >
                 VI</div>
         </div>
 
 
         <div class="sound_index">
-            <audio id="union" src="audio/union station.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_union" src="audio/union station.mp3"></audio>
 
             <div class="sound_place">Union Station</div>
-            <div class="sound" onmouseover="playSound('union')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('union_modal', 'union')">
                 2024-02-19</div>
             <div class="sound_time">6:23:43 AM</div>
 
 
-            <div class="modal" id="union_modal" onclick="closeModal('union_modal')">
+            <div class="modal" id="union_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Union Station Train Terminal/Gate </div>
@@ -620,22 +636,23 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="Edi9" src="audio/E_9 my narrative.mp3"></audio>
-            <div class="sound" onmouseover="playSound('Edi9')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_Edi9" src="audio/E_9 my narrative.mp3"></audio>
+            <div class="sound" >
                 LOG №9</div>
         </div>
 
         <div class="sound_index">
-            <audio id="union_train" src="audio/train@union.mp3" autoplay loop></audio>
+            <audio autoplay loop id="audio_union_train" src="audio/train@union.mp3"></audio>
 
             <div class="sound_place">Train @ Union Station</div>
-            <div class="sound" onmouseover="playSound('union_train')" onmouseout="stopSound()"
+            <div class="sound"  
                 onclick="openModal('union_train_modal', 'union_train')">
                 2024-02-19</div>
             <div class="sound_time">6:33:33 AM</div>
 
 
-            <div class="modal" id="union_train_modal" onclick="closeModal('union_train_modal')">
+            <div class="modal" id="union_train_modal">
+                <button class="close">&times;</button>
                 <div class="modal_log">LOG ⚚</div>
                 <div class="modal_metadata">
                     <div class="modal_place">Union Train Platform</div>
@@ -653,11 +670,15 @@
 
         <div class="abstract_index">
             <div class="sound_place">✠</div>
-            <audio id="fin" src="audio/goodbye recording.mp3"></audio>
-            <div id="summary" class="sound" onmouseover="playSound('fin')" onmouseout="stopSound()">
+            <audio autoplay loop id="audio_fin" src="audio/goodbye recording.mp3"></audio>
+            <div id="summary" class="sound" >
                 [fin]</div>
         </div>
 
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
