@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $("#abstract").hover(
       function () {
-        $(".abstract_index").css("color", "white");
+        $(".abstract_index").css("color", "red");
       },
       function () {
-        $(".abstract_index").css("color", "blue");
+        $(".abstract_index").css("color", "steelblue");
       }
     );
   

@@ -12,7 +12,7 @@ body {
     /* color: #5000ab; */
     /* color: #2a1e41; */
     /* color: #100dd3; */
-    color: blue;
+    color: steelblue;
 
 }
 
@@ -22,7 +22,7 @@ body {
     width: 100vw;
     display: inline-flex;
     font-family: "newEdge";
-    color: blue;
+    color: steelblue;
 
     /* justify-content: space-around;
     left: 316px;  
@@ -116,14 +116,13 @@ body {
 }
 
 .sound {
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.5vw;
     display: inline-block;
     margin-top: 10px;
 
     transition: transform .5s; 
     font-family:  "newEdge";
-    font-size: 6vw;
+    font-size: 6.5vw;
     margin-inline: 1;
 }
 
@@ -161,7 +160,7 @@ body {
     background-color: rgba(0,0,0,0.75);
 
     /* box-shadow: white 0px 0px 50px inset;  */
-   border:0.4vw solid #3f158d;
+   border:0.4vw solid lightsteelblue;
     height: 90vh; 
     width : calc(100vw - 10vh); 
     top: 5vh; 
@@ -176,7 +175,7 @@ body {
 .close {
     border:none;
     background:transparent;
-    color:white;
+    color: lightsteelblue;
     position:absolute;
     top:1em;
     right:1em;
@@ -187,7 +186,7 @@ body {
 
 .close:active,
 .close:hover{
-    color:blue;
+    color: aliceblue;
     
 }
 
@@ -228,7 +227,7 @@ body {
 } */
 
 .active{ 
-    color: white;
+    color: lightsteelblue;
 }
 
 .contentActive{
