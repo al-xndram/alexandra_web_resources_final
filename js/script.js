@@ -4,7 +4,7 @@ $(document).ready(function () {
         $(".abstract_index").css("color", "white");
       },
       function () {
-        $(".abstract_index").css("color", "#2f0f6a");
+        $(".abstract_index").css("color", "blue");
       }
     );
   
